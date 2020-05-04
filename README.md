@@ -1,4 +1,4 @@
-# VUE
+# VUE - Belvo
 
 > A Vue.js project
 
