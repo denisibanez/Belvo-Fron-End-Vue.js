@@ -1,30 +1,32 @@
 <template>
-  <div>
-    <div class="figure">
-    <div class="mj">
-      <div class="head">
-        <div class="nose"></div>
-            <div class="hair">
-              <div class="ponytail"></div>
-              <div class="frontpony"></div>
-            </div>
-        </div>
-        <div class="body">
-          <div class="jacket">
-            <div class="hand"></div>
+ <div class="notfound-wrapper">
+    <div class="notfound">
+      <div class="figure">
+      <div class="mj">
+        <div class="head">
+          <div class="nose"></div>
+              <div class="hair">
+                <div class="ponytail"></div>
+                <div class="frontpony"></div>
+              </div>
           </div>
-        </div>
-        <div class="leg">
+          <div class="body">
+            <div class="jacket">
+              <div class="hand"></div>
+            </div>
+          </div>
+          <div class="leg">
+            <div class="foot"></div>
+          </div>
+          <div class="leg lft">
           <div class="foot"></div>
         </div>
-        <div class="leg lft">
-        <div class="foot"></div>
+      </div>
+      <div class="error-no"> <span>4</span>
+        <div class="moon"></div><span>4</span></div>
       </div>
     </div>
-    <div class="error-no"> <span>4</span>
-      <div class="moon"></div><span>4</span></div>
-    </div>
-  </div>
+ </div>
 </template>
 
 <script>
@@ -38,22 +40,19 @@ export default {
   box-sizing: border-box;
 }
 
-html{
-  background: #23508a;
-background: radial-gradient(ellipse at center,  #23508a 0%,#1b3b62 50%,#1a365b 100%);
-  font-family: arial;
+.notfound-wrapper {
+   background: #23508a;
+  background: radial-gradient(ellipse at center,  #23508a 0%,#1b3b62 50%,#1a365b 100%);
   min-width: 400px;
 }
 
-body{
+.notfound{
   width: 100%;
   height: 100vh;
   margin: 0;
-background: radial-gradient(ellipse at center, rgba(115,133,154,1) 1%,rgba(114,132,152,0) 2%,rgba(0,0,0,0) 100%),
+  background: radial-gradient(ellipse at center, rgba(115,133,154,1) 1%,rgba(114,132,152,0) 2%,rgba(0,0,0,0) 100%),
   radial-gradient(ellipse at center, rgba(115,133,154,1) 1%,rgba(114,132,152,0) 2%,rgba(0,0,0,0) 100%),
-  radial-gradient(ellipse at center, rgba(115,133,154,0.5) 1%,rgba(114,132,152,0) 2%,rgba(0,0,0,0) 100%)
-  
-  ;
+  radial-gradient(ellipse at center, rgba(115,133,154,0.5) 1%,rgba(114,132,152,0) 2%,rgba(0,0,0,0) 100%);
   background-size: 250px 250px , 100px 100px , 60px 60px;
   background-repeat: repeat;
 
