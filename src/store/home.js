@@ -1,23 +1,25 @@
 export default {
   state: {
-    example: null,
+    albums: {
+      entry: []
+    },
   },
 
   mutations: {
-    example(state, param) {
-      state.example = param
+    setAlbum(state, param) {
+      state.albums = param
     },
   },
 
   actions: {
-    example(context, param) {
-      context.commit('example', param)
+    setAlbum(context, param) {
+      context.commit('setAlbum', param)
     },
   },
 
   getters: {
-    example: state => {
-      return state.example
+    albums: state => {
+      return state.albums
     },
   }
 }
